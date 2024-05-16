@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="style-Copilot.css">
+</head>
+<body>
+    <header>
+        <h1>Meme Generator</h1>
+    </header>
+    
+    <main>
+        <section class="image">
+            <img id="image" src="header image.jpg" alt="Artistic Image" width="320px">
+        </section>
+        
+        <section class="intro">       
+            <h2>Welcome to Brice's Meme Generator.  You will need to provide the text you want on the top and bottom, along with the URL to the image to use in the meme.  Let your creativity thrive!</h2>
+        </section>
+
+        <section class="meme">
+                <form class="meme">
+                <label for="topText" class="meme">Top Text:</label>
+                <input type="text" id="topText" name="topText" class="meme" placeholder="Enter top text here"><br><br>
+                
+                <label for="bottomText" class="meme">Bottom Text:</label>
+                <input type="text" id="bottomText" name="bottomText" class="meme" placeholder="Enter bottom text here"><br><br>
+
+                <label for="imageURL" class="meme">Image URL:</label>
+                <input type="text" id="imageURL" name="imageURL" class="meme" placeholder="Enter image URL here"><br><br>
+                
+                <input type="submit" class="meme" id="button" value="Generate Meme">
+            </form>
+        </section>
+
+        <div class="memeContainer"></div>
+
+    </main>
+
+    <footer>
+        <section class="jsScript">
+            <script src="script.js"></script>
+        </section>
+    </footer>
+</body>
+</html>
