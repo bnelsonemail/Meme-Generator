@@ -1,0 +1,198 @@
+
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    min-height: 100vh;
+    padding: 3rem;
+    color: white;
+}
+
+header h1 {
+  font-size: 4rem;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.example-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.example-image #image {
+    border: 1px solid white;
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+}
+
+.example-image h2{
+  position: absolute;
+}
+
+.example-image h2{
+    position: absolute;
+    font-size: 2.5rem;
+  text-shadow: 2px 2px 10px black;
+}
+
+.example-image h2.top-text{
+  top: 1rem;
+}
+
+.example-image h2.bottom-text{
+  bottom: 1rem;
+}
+
+.intro h2 {
+  max-width: 900px;
+  margin: 50px auto;
+}
+
+form {
+  width: 80%;
+  max-width: 800px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  color: white;
+  border: 1px solid white;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+form span {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  gap: 5px;
+}
+
+form label {
+  width: 20%;
+  font-size: 1.25rem;
+}
+
+form input {
+  height: 30px;
+  width: 100%;
+  padding: 0 10px;
+}
+
+form button {
+  background-color: crimson;
+  color: white;
+  border-radius: 10px;
+  width: 100%;
+  height: 60px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 1.75rem;
+  font-family: cursive;
+  border: none;
+}
+
+form button:hover {
+    background-color: blue;
+    box-shadow: 2px 8px 10px rgba(255,255,255, 0.1);
+    transition: .5s;
+}
+
+.memeContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 90vw;
+  border: crimson solid 1px;
+  margin: 100px 0;
+  width: 100%;
+  gap: 20px;
+}
+
+.memeContainer label {
+  position: relative;
+  top: -35px;
+  color: crimson;
+  font-size: 1.5rem;
+  font-family: cursive;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.meme {
+  position: relative;
+  width: 500px;
+  height: auto;
+}
+
+.meme-img {
+    width: 100%;
+    height: auto;
+}
+
+.meme-top,
+.meme-bottom {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /*padding: 0.5em;*/
+}
+
+.meme-top {
+    top: -1.3rem;
+}
+
+.meme-bottom {
+  bottom: -.5rem;
+}
+
+.delete-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: rgb(139, 0, 0);
+    transition: .5s;
+}
+
+.delete-all-button {
+    background-color: crimson;
+    color: white;
+    border-radius: 10px;
+    width: 50%;
+    height: 60px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 1.75rem;
+    font-family: cursive;
+    border: none;
+}
+
+.delete-all-button:hover {
+    background-color: blue;
+    box-shadow: 2px 8px 10px rgba(255,255,255, 0.1);
+    transition: .5s;
+}

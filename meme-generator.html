@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="styles-russell-delete all.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Meme Generator</h1>
+    </header>
+    
+    <main>
+        <section class="example-image">
+          <h2 class="top-text">Coding...</h2>
+            <img id="image" src="https://64.media.tumblr.com/a17a1176d3822b63aa0c76bc74b935fa/a824e40e963b5592-44/s500x437/583610b707ff7d3a5fba5864ee5de20473c7903d.png" alt="Artistic Image">
+          <h2 class="bottom-text">It's Like Aliens</h2>
+        </section>
+        
+        <section class="intro">       
+            <h2>Welcome to Brice's Meme Generator.  You will need to provide the text you want on the top and bottom, along with the URL to the image to use in the meme.</h2>
+            <h2>The delete button on the meme will only delete this session.  Refresh the page and you will be able to recover the deleted items.  The Delete All button will permanently delete all work and will not be recovered with a refresh.  Be sure that is what you want!!</h2>
+            <h2>Let your creativity thrive!</h2>
+        </section>
+
+        <section class="formInput">
+            <form class="memeGenerator">
+              <span>
+                <label for="topText">Top Text:</label>
+                <input type="text" id="topText" name="topText" placeholder="Enter top text here" />
+               </span>
+              <span>
+                <label for="bottomText">Bottom Text:</label>
+                <input type="text" id="bottomText" name="bottomText" placeholder="Enter bottom text here" />
+              </span>
+              <span>
+                <label for="imageURL">Image URL:</label>
+                <input type="text" id="imageURL" name="imageURL" placeholder="Enter image URL here">
+              </span>
+              <button type="submit" id='generate'> Generate Meme </button>
+            </form>
+        </section>
+
+        <div class="memeContainer">
+          <label>Your Memes </label>
+        </div>
+
+    </main>
+    <footer>
+        <script src="script-russell-delete all.js" defer></script>
+    </footer>
+</body>
+</html>
