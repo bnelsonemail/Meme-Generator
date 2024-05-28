@@ -14,30 +14,32 @@ function createMeme(memeData) {
     const img = document.createElement('img');
     const top = document.createElement('h2');
     const bottom = document.createElement('h2');
-    const deleteButton = document.createElement('button');
+    //const deleteButton = document.createElement('button');
   
     meme.classList.add('meme');
     img.classList.add('meme-img');
     top.classList.add('meme-top');
     bottom.classList.add('meme-bottom');
-    deleteButton.classList.add('delete-button');
+    //deleteButton.classList.add('delete-button');
 
     img.src = memeData.image;
     top.textContent = memeData.top;
     bottom.textContent = memeData.bottom;
-    deleteButton.textContent = 'Delete';
+    //deleteButton.textContent = 'Delete';
   
+  /*
     deleteButton.addEventListener('click', function() {
         meme.remove();
         localStorage.removeItem(img);
         alert("Item has been deleted");
         console.log("delete");
-    });
 
+    });
+*/
     meme.appendChild(img);
     meme.appendChild(top);
     meme.appendChild(bottom);
-    meme.appendChild(deleteButton);
+    //meme.appendChild(deleteButton);
 
     document.querySelector('.memeContainer').appendChild(meme); 
 }
