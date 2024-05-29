@@ -112,6 +112,7 @@ form button:hover {
   max-width: 90vw;
   border: crimson solid 1px;
   margin: 100px 0;
+  padding: 10px 0 10px 0;
   width: 100%;
   gap: 20px;
 }
